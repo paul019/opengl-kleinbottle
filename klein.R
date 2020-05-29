@@ -1,5 +1,5 @@
 # La botella de Klein con R
-# www.datosimagensonido.com
+# www.overfitting.net
 
 library(rgl)
 
@@ -69,7 +69,7 @@ sandclock3d=function(x=0, y=0, z=0, radius=1, height=1, n=101, ...){
   polygon3d(xp+x, yp+y, seq(z+height/2, z+height/2, len=n), ...)
 }
 
-# Botella de Klein (parametrización de Paul Chang)
+# Botella de Klein (parametrizaciÃ³n de Paul Chang)
 kleinbottle3d=function(x=0, y=0, z=0, n=101, ...){
   kleinbottle3d.bottom(x, y, z, n, ...)
   kleinbottle3d.body(x, y, z, n, ...)
@@ -124,7 +124,7 @@ par3d(FOV=0, zoom=0.75, userMatrix=um, windowRect=c(10,10,500,800))
 
 # Botella de Klein animada
 SEPMAX=3
-N=50  # Núm. de frames
+N=50  # NÃºm. de frames
 open3d()
 
 for (n in 0:(N-1)) {
@@ -154,7 +154,7 @@ for (n in 0:(N-1)) {
     fmt="png", top=TRUE)
 }
 
-# Primitivas clásicas
+# Primitivas clÃ¡sicas
 open3d()
 cylinder3d(0.5, z=-1.3, height=0.1, radius=2.6, col='green', n=5)
 cylinder3d(height=2.5, radius=0.8, col=5, alpha=0.5)
